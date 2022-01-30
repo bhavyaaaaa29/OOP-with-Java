@@ -6,11 +6,11 @@ public class eleven {
         int c;
         System.out.print("1.Random number generator between 0 to 49.\n2.Dice Game.\nEnter your choice:");
         c = scan.nextInt();
-        scan.close();
+        Random r = new Random(1000);
+        Random r1 = new Random();
         switch(c)
         {
             case 1:
-            Random r = new Random(1000);
             for(int i=0;i<100;i++)
             {
                 System.out.print(r.nextInt(50)+" ");
@@ -18,6 +18,33 @@ public class eleven {
                  System.out.print("\n");
             }
             break;
+            case 2:
+            System.out.print("Enter name of first player:");
+            String name1 = scan.next();
+            scan.nextLine();
+            System.out.print("Enter name of second player:");
+            String name2 = scan.next();
+            int p1=0,p2=0;
+            for(int i=0;p1<=30||p2<=30;i++)
+            {
+                if(i%2==0){
+                    p1+=r1.nextInt(7);
+                    if(p1>=30)
+                    {
+                        System.out.println(name1+" wins.");
+                        break;
+                    }
+                }
+                else{
+                    p2+=r1.nextInt(7);
+                    if(p2>=30)
+                    {
+                        System.out.println(name2+" wins.");
+                        break;
+                    }
+                }
+            }
         }
+        scan.close();
     }
 }
