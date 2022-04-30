@@ -6,9 +6,9 @@ class twentySix
     {
         try
         {
-        FileReader f1 = new FileReader("src.txt");
+        FileReader f1 = new FileReader("OOP-with-Java\\src.txt");
         BufferedReader br = new BufferedReader(f1);
-        FileWriter f2 = new FileWriter("dest.txt");
+        FileWriter f2 = new FileWriter("OOP-with-Java\\dest.txt");
         String word1,word2;
         BufferedReader b2 = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter word 1:");
