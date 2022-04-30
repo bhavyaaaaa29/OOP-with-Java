@@ -1,19 +1,27 @@
-public class twenty {
-    public static void main(String[] args) {
-        b obj = new b();
-        obj.display();
-    }
-}
-class a
+class twenty
 {
-    static int x=10;
-}
-class b extends a
-{
-    int x=15;
-    public void display()
+    public static void main(String arg[])
     {
-        System.out.println("Static x:"+a.x);
-        System.out.println("Normal x:"+x);
+        B b=new B(56,44);
+        b.display();
     }
+}
+class A
+{
+    public static int x;
+}
+class B extends A
+{
+    public int x;
+    B(int a,int b)
+    {
+        A.x=a;
+        this.x=b;
+    }
+    void display()
+    {
+        System.out.println("Static variable x: "+A.x);
+        System.out.println("Normal variable x: "+this.x);
+    }
+    
 }

@@ -2,10 +2,10 @@
 
 public class twentyThree {
     public static void main(String[] args) {
-        new circle().findArea();
+        new c().findArea();
     }
 }
-final class circle
+final class c
 {
     final float radius=10f;
     final float pi=3.14f;
