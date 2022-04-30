@@ -39,22 +39,21 @@ class Z extends X{
     }
 }*/
 import java.util.*;
-class A {
- int x = 10;
+class Object {
 }
-class B extends A {
- int x = 2;
- void display() {
- // super.x prints value of variable x of class A
- System.out.println("X of A :" + super.x);
- // x prints value of variable x of class B
- System.out.println("X of B :" + x);
- }
+class Human extends Object {
 }
-
+class Boy extends Human {
+}
 public class ninteen {
  public static void main(String[] args) {
- B obj = new B();
- obj.display();
+ Boy B1 = new Boy();
+ System.out.println("\nThe value of object B1:" + B1);
+ Human H = B1;
+ if (H instanceof Boy) {
+ System.out.println("\nIt is not safe to downcast the object...");
+ Boy B2 = (Boy) H;
+ System.out.println("\nThe value of object B2:" + B2);
+ }
  }
 }
