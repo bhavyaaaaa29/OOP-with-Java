@@ -1,7 +1,5 @@
 public class twenty {
     public static void main(String[] args) {
-        a A = new a();
-        A.x=15;
         b B = new b();
         B.x=20;
         B.display();
@@ -9,14 +7,14 @@ public class twenty {
 }
 class a
 {
-    static int x;
+    static int x=10;
 }
 class b extends a
 {
-    int x;
+    int x=15;
     void display()
     {
-        System.out.println("Static x:"+super.x);
+        System.out.println("Static x:"+x);
         System.out.println("Normal x:"+this.x);
     }
 }

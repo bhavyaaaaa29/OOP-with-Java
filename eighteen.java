@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javax.sound.midi.Track;
-
 public class eighteen{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
