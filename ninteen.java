@@ -1,4 +1,4 @@
-public class ninteen {
+/*public class ninteen {
     public static void main(String[] args) {
             X x = new X();
             Y y = new Y();      
@@ -37,4 +37,24 @@ class Z extends X{
     {
         System.out.println("Z has been called.");
     }
+}*/
+import java.util.*;
+class A {
+ int x = 10;
+}
+class B extends A {
+ int x = 2;
+ void display() {
+ // super.x prints value of variable x of class A
+ System.out.println("X of A :" + super.x);
+ // x prints value of variable x of class B
+ System.out.println("X of B :" + x);
+ }
+}
+
+public class ninteen {
+ public static void main(String[] args) {
+ B obj = new B();
+ obj.display();
+ }
 }
