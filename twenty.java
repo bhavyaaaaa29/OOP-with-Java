@@ -1,8 +1,7 @@
 public class twenty {
     public static void main(String[] args) {
-        b B = new b();
-        B.x=20;
-        B.display();
+        b obj = new b();
+        obj.display();
     }
 }
 class a
@@ -12,9 +11,9 @@ class a
 class b extends a
 {
     int x=15;
-    void display()
+    public void display()
     {
-        System.out.println("Static x:"+x);
-        System.out.println("Normal x:"+this.x);
+        System.out.println("Static x:"+a.x);
+        System.out.println("Normal x:"+x);
     }
 }
